@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: nginx-helm-deployment
   labels:
     app: nginx
 spec:
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: 9526584898/nodeapp
+        image: 9526584898/nodeapphelm
         ports:
         - containerPort: 8080
